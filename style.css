@@ -1,0 +1,178 @@
+
+/*Taha Kadi*/
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h2 {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10rem;
+}
+
+.header .pioche {
+    width: 100rem;
+    display: flex;
+}
+
+.header .pioche img {
+    width: 30px;
+}
+
+.progress {
+    margin-left: 15px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 30px;
+    text-align: center;
+    background-color: #707070;
+    position: relative;
+}
+
+.progress h3 {
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin: 0px auto;
+    margin-left: 13rem;
+    font-size: 28px;
+    top: 0;
+}
+
+.progress .progress__bar {
+    height: 100%;
+    width: 100%;
+    background-color: #0a3711;
+    color: #ffffff;
+    font-size: 27px;
+    transition: 0.4s;
+}
+
+.header .cristaux {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.header .cristaux img {
+    width: 35px;
+}
+
+.grille {
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: repeat(15, 30px); /* Hauteur*/
+    grid-template-columns: repeat(25, 30px); /* Largeur*/
+    grid-gap: 0px;
+    border: 1px solid black;
+    width: 750px;
+    height: 450px;
+}
+
+.grille .tuile {
+    background: grey;
+    text-align: center;
+    position: relative;
+}
+
+.grille .tuile img {
+    width: 30px;
+    height: 30px;
+}
+
+.grille .tuile .imgcrystal {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grille .tuile .hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grille .tuile .wall {
+    border: 3px solid black;
+    padding: 2px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 10rem;
+}
+
+.buttons .move {
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 70px 70px 70px;
+    grid-gap: 5px;
+}
+
+.buttons .move button:first-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.buttons .move button,
+.buttons .quit button,
+.modal .content button  {
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #000000d0;
+    border: 3px solid #000;
+    color: white;
+}
+
+.buttons .quit button {
+    height: 40px;
+    width: 70px;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.279);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.none {
+    display: none;
+}
+
+.modal .content {
+    background-color: white;
+    padding: 20px 70px;
+    border-radius: 5px;
+}
+
+.modal .content h2 {
+    text-transform: uppercase;
+}
+
+.modal .content button {
+    height: 40px;
+    width: 170px;
+}
