@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/icone_cristal.png" type="image/png">
+    <title>Mine Aux Cristaux</title>
+</head>
+<body>
+    <h2>Mine Aux Cristaux</h2>
+    <div class="header">
+        <div class="pioche">
+            <img src="img/icone_pioche.png">
+            <div class="progress">
+                <div class="progress__bar"></div>
+                <h3 id="piocheCounteur">40 / 40</h3>
+            </div>
+        </div>
+        <div class="cristaux">
+            <img src="img/icone_cristal.png" alt="">
+            <span id="cristalCounteur">0</span>
+        </div>
+    </div>
+    <div class="grille"></div>
+    <div class="buttons">
+        <div class="move">
+            <button id="top">↑</button>
+            <button id="left">←</button>
+            <button id="bottom">↓</button>
+            <button id="right">→</button>
+        </div>
+        <div class="quit">
+            <button id="quit">Quitter</button>
+        </div>
+    </div>
+    <div class="modal none" id="gameOver">
+        <div class="content">
+            <h2>Game Over</h2>
+            <p>Cristaux : <span id="cristalScoreFinal"></span></p>
+            <button id="newGame">Nouvelle Partie</button>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
